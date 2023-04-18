@@ -1,10 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import {Text, TextInput, View } from 'react-native';
 
-function Student() {
+function Student(props) {
   return (
     <View>
-      <Text> Hey, this is your third project. Wow congrats</Text>
+      <Text> Hey, this is your {props.name}. Wow congrats</Text>
     </View>
   );
 }
@@ -17,10 +17,10 @@ export default function MultiComp(){
         alignItems: 'center'
         }}>
     <Text> Welcome to the Yabratory</Text>
-    <Student />
-    <Student />
-    <Student />
-    <Student />
+    <Student name="Stogie Mclugy" />
+    <Student name="El Don"/>
+    <Student name="Rootness Tootness"/>
+    <Student name="Brezlen Cray"/>
     </View>
   );
 }
